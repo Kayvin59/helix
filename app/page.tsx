@@ -65,7 +65,7 @@ export default function HomePage() {
               <div className="mx-auto aspect-square overflow-hidden rounded-xl">
                 <div className="relative h-full w-full">
                   <Image
-                    src="/helix-hero.jpg"
+                    src="/helix-hero.png"
                     width={500}
                     height={500}
                     alt="Helix Protocol Network Visualization"
