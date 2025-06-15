@@ -29,7 +29,7 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="w-full py-8 md:py-16 lg:py-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_600px] items-center">
               <div className="flex flex-col justify-center space-y-6">
                 <div className="space-y-4">
@@ -72,7 +72,7 @@ export default function HomePage() {
 
         {/* Features Section */}
         <section id="features" className="w-full py-8 md:py-16 lg:py-20 bg-white">
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900">
@@ -130,7 +130,7 @@ export default function HomePage() {
 
         {/* How It Works Section */}
         <section id="how-it-works" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900">How Helix Works</h2>
@@ -223,7 +223,7 @@ export default function HomePage() {
 
         {/* Trust & Compliance Section */}
         <section id="trust" className="w-full py-8 md:py-16 lg:py-20 bg-white border-t">
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-8 text-center">
               <div className="space-y-4">
                 <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
@@ -294,7 +294,7 @@ export default function HomePage() {
 
         {/* CTA Section */}
         <section className="w-full py-8 md:py-16 lg:py-20 bg-gradient-to-r from-blue-600 to-green-600">
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-white">
