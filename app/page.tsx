@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Clock, FileText, Network, RefreshCw, Shield, Zap } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function HomePage() {
@@ -10,7 +11,14 @@ export default function HomePage() {
       {/* Navigation */}
       <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
         <Link className="flex items-center justify-center" href="/">
-          <Network className="h-8 w-8 text-blue-600" />
+          <span>
+              <Image
+              src="/helix-logo.png"
+              width={60}
+              height={60}
+              alt="Picture of the author"
+              />
+          </span>
           <span className="ml-2 text-xl font-bold text-gray-900">Helix</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -22,6 +30,9 @@ export default function HomePage() {
           </Link>
           <Link className="text-sm font-medium hover:text-blue-600 transition-colors" href="#trust">
             Trust
+          </Link>
+          <Link className="text-sm font-medium hover:text-blue-600 transition-colors" href="/profile">
+            Profile
           </Link>
         </nav>
       </header>
@@ -43,27 +54,23 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col gap-3 min-[400px]:flex-row">
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                    Get Started
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                      Get Started
+                      <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                   <Button variant="outline" size="lg">
                     Request Demo
                   </Button>
                 </div>
               </div>
-              <div className="mx-auto aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-blue-100 to-green-100 p-8">
+              <div className="mx-auto aspect-square overflow-hidden rounded-xl">
                 <div className="relative h-full w-full">
-                  {/* Placeholder for EU network visualization */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="grid grid-cols-3 gap-4 opacity-20">
-                      {Array.from({ length: 9 }).map((_, i) => (
-                        <div key={i} className="h-8 w-8 rounded-full bg-blue-600" />
-                      ))}
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Network className="h-24 w-24 text-blue-600" />
-                    </div>
-                  </div>
+                  <Image
+                    src="/helix-hero.jpg"
+                    width={500}
+                    height={500}
+                    alt="Helix Protocol Network Visualization"
+                    className="rounded-xl object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -312,7 +319,7 @@ export default function HomePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 hover:border-white/80"
+                  className="border-white hover:bg-white/10 hover:border-white/80"
                 >
                   Schedule Demo
                 </Button>
